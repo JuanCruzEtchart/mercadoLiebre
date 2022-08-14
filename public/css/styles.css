@@ -1,0 +1,148 @@
+body {
+  font-family: Roboto;
+  font-size: 12px;
+  background-color: white;
+  line-height: 20px;
+  text-decoration: none;
+  color: black;
+}
+
+header {
+  background-color: #eac926;
+}
+
+#logo {
+  width: 200px;
+  margin: 20px;
+}
+
+#comprar {
+  text-align: center;
+}
+
+.titulares {
+  font-size: 24px;
+}
+
+.precios {
+  font-size: 18px;
+}
+
+#banner {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px;
+  width: 100%;
+}
+
+.fotos {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding-top: 10px;
+}
+
+.descuentos {
+  font-size: 16px;
+}
+
+.descripciones {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#buscador {
+  font-size: 15px;
+  margin: 20px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5%;
+}
+
+.lupa {
+  background-color: white;
+  padding: 2px;
+  margin: 20px;
+  border-radius: 20%;
+  border: 1px solid black;
+}
+
+#menu {
+  padding: 0px;
+  margin: 0px;
+}
+
+ul#menu li a {
+  text-decoration: inherit;
+  color: inherit;
+}
+
+#burger-menu {
+  display: flex;
+  justify-content: center;
+}
+
+div#burger-menu i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: #104aa2;
+  padding: 5px;
+  margin: 20px;
+  width: 32px;
+  height: 32px;
+  font-size: 22px;
+  border-radius: 10%;
+}
+
+article {
+  border: 10px solid #ececec;
+  border-bottom: 30px;
+  
+}
+
+article div { 
+  padding-left: 25px;
+}
+
+article div.descripciones {
+  padding-bottom: 25px;
+}
+
+#ultimoArticulo{
+  border-bottom: 10px solid #ececec;
+}
+
+section.footer i {
+  display: flex;
+  justify-content: center;
+  color: #104aa2;
+  font-size: 30px;
+  margin: 12px;
+}
+
+section.footer h4 {
+  display: flex;
+  justify-content: center;
+  font-size: 16px;
+  color: #676767;
+  margin: 0px;
+}
+
+section.footer p {
+  display: flex;
+  justify-content: center;
+  font-size: 11px;
+  color: #676767;
+  text-align: center;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin: 0px;
+  line-height: 19px;
+}
+
+#copy {
+  padding: 15px;
+  color: #676767;
+}
