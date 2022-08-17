@@ -16,7 +16,7 @@ body {
 
 .header-home {
   background-color: #eac926;
-  width: 100%;
+  padding: 5%;
 }
 
 .main-home {
@@ -32,9 +32,8 @@ body {
 }
 
 div#search {
-  display: inline;
+  display: block;
   font-size: 15px;
-  margin: 20px;
   background-color: white;
   border-radius: 5%;
   padding: 10px;
@@ -82,6 +81,7 @@ section.banner img {
 
 .titles {
   font-size: 24px;
+  margin: 20px;
   color: #666666;
 }
 
@@ -89,15 +89,15 @@ section.banner img {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  padding-top: 10px;
+
 }
 
 .price {
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .discount {
-  font-size: 14px;
+  font-size: 16px;
   color: #40b54b;
 }
 
@@ -107,18 +107,18 @@ section.banner img {
 
 main section article {
   text-align: center;
-  border: 5px solid #ececec;
+  margin: 10px 0px;
 
 }
 
-article div {
+main article div {
   text-align: left;
   background-color: white;
-  border: #ebebeb 1px solid;
+  border-top: #ebebeb 1px solid;
   padding: 15px;
 }
 
-article div i {
+main article div i {
   font-size: 15px;
   color: #40b54b;
   padding: 5px;
@@ -162,10 +162,10 @@ section.footer p {
 @media (min-width: 361px) {
   .description {
     display: inherit;
-    font-size: 15px;
+    font-size: 16px;
     font-weight: bold;
     color: #666666;
-    margin: 20px 10px 0px 0px;
+    margin: 20px 0px 0px 0px;
   }
 
   header nav {
@@ -183,6 +183,10 @@ section.footer p {
   div#burger-menu {
     display: none;
   }
+
+  main section article{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
 
   }
 
