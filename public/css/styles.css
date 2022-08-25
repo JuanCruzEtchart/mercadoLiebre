@@ -40,7 +40,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  width: 90%;
+  width: 100%;
 }
 
 .form {
@@ -77,7 +77,7 @@ body {
   text-align: center;
 }
 
-.main-navbar {
+.header-navbar {
   display: none;
 }
 
@@ -124,7 +124,7 @@ main section article .product-picture {
 }
 
 .description {
-  display: block;
+  visibility: hidden;
   font-size: 16px;
   font-weight: bold;
   color: #666666;
@@ -172,6 +172,11 @@ main section article div i {
   position: absolute;
   right: 20px;
   top: -15px;
+  transition: transform 400ms;
+}
+
+main section article div i:hover {
+  transform: rotateZ(-90deg);
 }
 
 /*FOOTER:*/
@@ -182,12 +187,20 @@ main section article div i {
   width: 100%;
 }
 
-section.footer i {
+section.footer div {
   display: flex;
   justify-content: center;
   color: #104aa2;
   font-size: 2em;
   margin-bottom: 10px;
+}
+
+section.footer i {
+  transition: color 300ms;
+}
+
+section.footer i:hover {
+  color: #eac926;
 }
 
 .footer-home h4 {
@@ -219,7 +232,7 @@ section.footer i {
 
 /*Mobile*/
 @media (max-width: 600px) {
-  .main-navbar {
+  .header-navbar {
     display: none;
   }
   .products {
@@ -277,7 +290,7 @@ section.footer i {
     color: inherit;
   }
 
-  .main-navbar {
+  .header-navbar {
     display: flex;
     text-decoration: inherit;
     color: inherit;
@@ -285,16 +298,20 @@ section.footer i {
     justify-content: space-between;
   }
 
-  .main-navbar ul {
+  .header-navbar ul {
     display: flex;
   }
 
-  .main-navbar li {
+  .header-navbar li {
     margin: 7px;
   }
 
   .description {
-    display: block;
+    transition: visibility 100ms;
+  }
+
+  main section article:hover .description {
+    visibility: visible
   }
 
   div#burger-menu {
@@ -302,6 +319,10 @@ section.footer i {
   }
 
   .products article {
+    transition: box-shadow 200ms;
+  }
+
+  .products article:hover {
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
   }
 
@@ -322,7 +343,7 @@ section.footer i {
     max-width: 1199px;
   }
 
-  .main-navbar .products {
+  .header-navbar .products {
     justify-content: space-around;
   }
 
@@ -351,6 +372,14 @@ section.footer i {
 
   .footer-home #copy {
     margin: 20px 0px 0px 20px;
+  }
+
+  section.footer i {
+    transition: color 300ms;
+  }
+
+  section.footer i:hover {
+    color: #eac926;
   }
 }
 

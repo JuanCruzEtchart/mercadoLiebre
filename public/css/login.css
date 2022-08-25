@@ -12,6 +12,10 @@ body {
   text-decoration: none;
   color: black;
   background-color: #ececec;
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 /*HEADER:*/
@@ -31,11 +35,6 @@ body {
   max-width: 300px;
 }
 
-.main-home {
-  margin: auto;
-  width: 90%;
-}
-
 .logo-search {
   display: flex;
   align-items: center;
@@ -43,33 +42,38 @@ body {
   width: 90%;
 }
 
-.form {
-  display: flex;
+.form-header {
   width: 50%;
   padding-left: 10px;
   background-color: white;
   border-radius: 5px;
   padding: 10px;
-  align-items: center;
+  position: relative;
 }
 
-.form .submit {
+.form-header .nav-search-btn {
   text-align: center;
-  background-color: white;
+  background-color: red;
+  border: none;
   border-radius: 5px;
   font-size: 15px;
   width: 16px;
+  padding: 5px;
   padding-right: 5px;
   color: #666666;
+  position: absolute;
+  right: 10px;
+  top: 12px;
 }
 
-.input {
+div #search-box {
+  width: 100%;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
   font-size: 15px;
   background-color: white;
-  border-radius: 5%;
+  border: none;
   color: #666666;
 }
 
@@ -79,7 +83,7 @@ body {
   text-align: center;
 }
 
-.main-navbar {
+.header-navbar {
   display: none;
 }
 
@@ -104,14 +108,14 @@ div#burger-menu i {
 
 /*MAIN*/
 
-.main-register {
+.main-login {
   margin: auto;
   width: 90%;
   font-size: 14px;
-  margin-bottom: 20px;
+  padding-bottom: 20px;
 }
 
-.form-register {
+.form-login {
   padding: 10px 0px;
 }
 
@@ -123,7 +127,6 @@ div#burger-menu i {
   border: none;
 }
 
-
 .send-button {
   width: 100%;
   padding: 10px;
@@ -131,19 +134,22 @@ div#burger-menu i {
   border: none;
   color: white;
   background-color: #0044aa;
+  transition: all 300ms;
 }
 
-
+.send-button:hover {
+  background-color: #0022aa;
+}
 
 /*FOOTER:*/
 
-.footer-home {
+.footer-login {
   background-color: white;
   padding-top: 40px;
   width: 100%;
 }
 
-section.footer i {
+section.footer div {
   display: flex;
   justify-content: center;
   color: #104aa2;
@@ -151,7 +157,15 @@ section.footer i {
   margin-bottom: 10px;
 }
 
-.footer-home h4 {
+section.footer i {
+  transition: color 300ms;
+}
+
+section.footer i:hover {
+  color: #eac926;
+}
+
+.footer-login h4 {
   display: flex;
   justify-content: center;
   font-size: 16px;
@@ -159,7 +173,7 @@ section.footer i {
   margin: 0px;
 }
 
-.footer-home p {
+.footer-login p {
   display: flex;
   justify-content: center;
   font-size: 11px;
@@ -180,7 +194,7 @@ section.footer i {
 
 /*Mobile*/
 @media (max-width: 600px) {
-  .main-navbar {
+  .header-navbar {
     display: none;
   }
 }
@@ -230,7 +244,7 @@ section.footer i {
     color: inherit;
   }
 
-  .main-navbar {
+  .header-navbar {
     display: flex;
     text-decoration: inherit;
     color: inherit;
@@ -238,11 +252,11 @@ section.footer i {
     justify-content: space-between;
   }
 
-  .main-navbar ul {
+  .header-navbar ul {
     display: flex;
   }
 
-  .main-navbar li {
+  .header-navbar li {
     margin: 7px;
   }
 
@@ -250,9 +264,7 @@ section.footer i {
     display: none;
   }
 
-  .main-register {
-    margin: auto;
-    margin-bottom: 20px;
+  .main-login {
     width: 50%;
     font-size: 14px;
   }
@@ -271,19 +283,19 @@ section.footer i {
     justify-content: space-around;
   }
 
-  .footer-home article {
+  .footer-login article {
     width: 30%;
   }
 
-  .footer-home h4 {
+  .footer-login h4 {
     font-size: 19px;
   }
 
-  .footer-home p {
+  .footer-login p {
     font-size: 14px;
   }
 
-  .footer-home #copy {
+  .footer-login #copy {
     margin: 20px 0px 0px 20px;
   }
 }

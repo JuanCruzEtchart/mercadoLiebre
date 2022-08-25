@@ -29,17 +29,27 @@
               />
             </a>
           </div>
-          <div class="form" action="#" method="GET">
-            <div class="input">Buscar productos, marcas y más...</div>
-            <div class="submit"><i class="fas fa-search"></i></div>
-          </div>
+          <form action="#" method="GET" class="form-header">
+            <div>
+              <input
+                type="text"
+                id="search-box"
+                placeholder="Buscar productos, marcas y más..."
+              />
+            </div>
+            <div>
+              <button type="submit" class="nav-search-btn">
+                <i class="fas fa-search"></i>
+              </button>
+            </div>
+          </form>
         </div>
         <p id="buy">
           <i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta
           de crédito
         </p>
       </div>
-      <nav class="main-navbar">
+      <nav class="header-navbar">
         <ul type="none" class="left-navbar">
           <li><a href="#">Ofertas</a></li>
           <li><a href="#">Tiendas Oficiales</a></li>
@@ -64,8 +74,8 @@
         <i class="fas fa-bars"></i>
       </div>
     </header>
-    <main class="main-register">
-      <form action="/register" method="post" class="form-register"></form>
+    <main class="main-login">
+      <form action="/login" method="post" class="form-login"></form>
       <div>
         <input
           type="text"
@@ -90,7 +100,7 @@
         >
       </div>
     </main>
-    <footer class="footer-home">
+    <footer class="footer-login">
       <section class="footer">
         <br />
         <article>
