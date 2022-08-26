@@ -192,7 +192,7 @@ section.footer div {
 }
 
 section.footer i {
-  transition: color 300ms;
+  transition: color 100ms;
 }
 
 section.footer i:hover {
@@ -334,13 +334,6 @@ section.footer i:hover {
     margin: 20px 0px 0px 20px;
   }
 
-  section.footer i {
-    transition: color 300ms;
-  }
-
-  section.footer i:hover {
-    color: #eac926;
-  }
 }
 
 /*Extra large devices*/

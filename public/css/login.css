@@ -158,12 +158,13 @@ section.footer div {
 }
 
 section.footer i {
-  transition: color 300ms;
+  transition: color 100ms;
 }
 
 section.footer i:hover {
   color: #eac926;
 }
+
 
 .footer-login h4 {
   display: flex;
