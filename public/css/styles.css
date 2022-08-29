@@ -249,6 +249,7 @@ main section article div i:hover {
   .header-navbar {
     display: none;
   }
+
   .products {
     display: flex;
     flex-wrap: wrap;
